@@ -8,9 +8,13 @@ Web application for smartag monitoring system
 
 <h4>PiSensorScripts</h4>
 -- This folder contains all scripts tasked with reading in data from sensors and sending them to AWS.
+
 - DHT11.py is the script for reading in data from the DHT11 temperature and humidity sensor
+
 - TSL2561.py is the script for reading in data from the TSL2561 light sensor
+
 - YL69_ADS1015.py is the script for reading in data from the YL69 moisture sensor
+
 - IoTConnect.py is the python script tasked with formatting the sensor data from above and sending it to AWS IoT
 
 <h4>PiSensorScripts</h4>
