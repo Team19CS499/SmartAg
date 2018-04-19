@@ -9,13 +9,21 @@ Web application for smartag monitoring system
 <h4>PiSensorScripts</h4>
 -- This folder contains all scripts tasked with reading in data from sensors and sending them to AWS.
 
-- DHT11.py is the script for reading in data from the DHT11 temperature and humidity sensor
+- readTempHumid.py is the script for reading in data from the DHT11 temperature and humidity sensor
 
-- TSL2561.py is the script for reading in data from the TSL2561 light sensor
+- readLight.py is the script for reading in data from the TSL2561 light sensor
 
-- YL69_ADS1015.py is the script for reading in data from the YL69 moisture sensor
+- readMoisture.py is the script for reading in data from the YL69 moisture sensor
 
-- IoTConnect.py is the python script tasked with formatting the sensor data from above and sending it to AWS IoT
+- handle_data.py is the python script tasked with formatting the sensor data from above and sending it to AWS IoT. This file also handles automatically turning light on/off
+
+- xxxx_data.txt files are for holding sensor data
+
+- continuousRead.sh is a Bash script tasked with running all readxxxx.py programs above. It runs all programs in a loop, waiting 10 seconds between each loop.
+
+- led_on.sh is a Bash script that turns the light on
+
+- led_off.sh is a Bash script that turns the light off
 
 <h4>PiSensorScripts</h4>
 -- This folder houses the code for the front end/web site
