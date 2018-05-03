@@ -1,3 +1,7 @@
+# This program is mainly derived from example code. It was added to on lines 58-67 by Austin Vanderpool for this project. Some other lines were commented out as well. These lines are tasked with writing the sensor value to the data holding file.
+# This program is being used by team 19 in CS499 at the University of Kentucky. Members include Austin Vanderpool, Delbert Harrison, Jesse Vaught, Steven Liu.
+# The purpose of this program is to read in the temperature and humidity sensor value and write it to a file so another program can read it. 
+
 #!/usr/bin/python
 # Copyright (c) 2014 Adafruit Industries
 # Author: Tony DiCola
@@ -53,7 +57,7 @@ humidity, temperature = Adafruit_DHT.read_retry(11, 23)
 if humidity is not None and temperature is not None:
     f = open(tempFile,"w")
     f.write(str(temperature))
-
+    
     humidF = open(humidFile,"w")
     humidF.write(str(humidity))
 
