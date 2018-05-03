@@ -1,3 +1,7 @@
+# This program is mainly derived from example code. It was added to on lines 60-61 by Austin Vanderpool for this project. These lines are tasked with writing the sensor value to the data holding file.
+# This program is being used by team 19 in CS499 at the University of Kentucky. Members include Austin Vanderpool, Delbert Harrison, Jesse Vaught, Steven Liu.
+# The purpose of this program is to read in the moisture sensor value and write it to a file so another program can read it. 
+
 # Simple demo of continuous ADC conversion mode for channel 0 of the ADS1x15 ADC.
 # Author: Tony DiCola
 # License: Public Domain
